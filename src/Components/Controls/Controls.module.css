@@ -1,0 +1,37 @@
+.controlsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.controlsContainer .controlsButtons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controlsContainer .controlsButtons button {
+  width: 45%;
+  height: 35px;
+  background: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.controlsContainer .controlsButtons button.reset {
+  background-color: red;
+  color: aliceblue;
+}
+
+.controlsContainer .controlsButtons button.confirm {
+  background-color: darkolivegreen;
+  color: aliceblue;
+}
+
+.controlsContainer .controlsButtons button.confirm:disabled {
+  background-color:lightslategray;
+}

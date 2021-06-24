@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.resultQuestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: azure;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.resultAnswers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.resultAnswer {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: azure;
+  margin-top: 15px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.resultAnswer.resultCorrect {
+  background-color: lime;
+}
+
+.resultAnswer.resultIncorrect {
+  background-color: tomato;
+}
+
+.resultContainer {
+  width: 100%;
+  margin: 10px 0;
+}

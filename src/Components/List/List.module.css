@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container .optionContainer {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: azure;
+  margin-top: 15px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .optionContainer:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+  transition: all 0.3s;
+}
+
+.container .optionContainer.active {
+  background-color: blueviolet;
+  color: aliceblue;
+}
